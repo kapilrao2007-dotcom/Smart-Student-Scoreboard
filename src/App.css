@@ -1,0 +1,216 @@
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #0a0f1c, #05070d);
+  color: #d9faff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+/* HEADER */
+.header {
+  margin: 40px 0;
+}
+
+.header h1 {
+  font-size: 52px;
+  color: white;
+}
+
+.header span {
+  color: #00ffe0;
+  text-shadow:
+    0 0 5px #00ffe0,
+    0 0 10px #00ffe0,
+    0 0 20px #00ffe0,
+    0 0 40px #00ffe0,
+    0 0 80px rgba(0,255,224,0.8);
+}
+
+.sub {
+  font-size: 12px;
+  color: #6ee7ff;
+  letter-spacing: 3px;
+}
+
+.line {
+  height: 2px;
+  width: 140px;
+  background: #00ffe0;
+  box-shadow:
+    0 0 5px #00ffe0,
+    0 0 15px #00ffe0,
+    0 0 30px #00ffe0;
+  margin: 10px 0;
+}
+
+/* PANEL */
+.panel {
+  border: 1px solid #1f3b4d;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+/* FORM */
+.form-header {
+  font-size: 12px;
+  color: #6ee7ff;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.new {
+  color: #00ffe0;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  background: transparent;
+  border: 1px solid #2a4a5e;
+  padding: 10px;
+  color: white;
+}
+
+input:focus {
+  outline: none;
+  border-color: #00ffe0;
+  box-shadow: 0 0 8px #00ffe0;
+}
+
+button {
+  border: 1px solid #00ffe0;
+  background: transparent;
+  color: #00ffe0;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #00ffe0;
+  color: black;
+  box-shadow:
+    0 0 10px #00ffe0,
+    0 0 20px #00ffe0,
+    0 0 40px #00ffe0;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.box {
+  flex: 1;
+  border: 1px solid #1f3b4d;
+  padding: 20px;
+}
+
+.box h2 {
+  color: #00ffe0;
+  text-shadow:
+    0 0 5px #00ffe0,
+    0 0 15px #00ffe0;
+}
+
+/* TABLE */
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #6ee7ff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  padding: 10px;
+  color: #6ee7ff;
+}
+
+td {
+  padding: 10px;
+  border-top: 1px solid #1f3b4d;
+}
+
+/* LEFT LINE */
+.name {
+  border-left: 4px solid #00ff88;
+}
+
+/* SCORE */
+.score {
+  color: #ffc107;
+}
+
+/* STATUS */
+.pass {
+  color: #00ff88;
+  border: 1px solid #00ff88;
+  padding: 3px 8px;
+  box-shadow: 0 0 8px #00ff88;
+}
+
+.fail {
+  color: #ff4d4d;
+  border: 1px solid #ff4d4d;
+  padding: 3px 8px;
+  box-shadow: 0 0 8px #ff4d4d;
+}
+/* FIX TABLE ALIGNMENT */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* IMPORTANT */
+}
+
+/* Equal column widths */
+th:nth-child(1),
+td:nth-child(1) {
+  width: 25%;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 20%;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 20%;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+  width: 35%;
+}
+
+/* Align properly */
+th, td {
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* Fix update section spacing */
+td input {
+  width: 80px;
+  margin-right: 10px;
+}
+
+/* Header spacing fix */
+th {
+  padding-bottom: 15px;
+}
