@@ -125,7 +125,6 @@ export default function App() {
                     <span className="fail">FAIL</span>
                   )}
                 </td>
-
                 <td>
                   <input
                     defaultValue={s.score}
